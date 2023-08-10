@@ -6,23 +6,22 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
-public abstract class Odontologo1 implements OdontologoDAO<Odontologo> {
+public class OdontologoMemoria implements OdontologoDAO<Odontologo> {
 
-    private static final Logger LOGGER = Logger.getLogger(Odontologo1.class);
+    private static final Logger LOGGER = Logger.getLogger(OdontologoMemoria.class);
     private List<Odontologo> odontologos;
 
-    public Odontologo1(List<Odontologo> odontologos) {
+    public OdontologoMemoria(List<Odontologo> odontologos) {
         this.odontologos = odontologos;
     }
 
-    @Override
     public Odontologo guardar(Odontologo odontologo) {
         odontologos.add(odontologo);
         LOGGER.info("Odontologo guardado: " + odontologo);
         return odontologo;
     }
-    @Override
-    public List<Odontologo> listarodontologos() {
+
+    public List<Odontologo> listarOdontologos() {
         LOGGER.info("Listado de los odontologos: \n" + odontologos);
         return odontologos;
     }

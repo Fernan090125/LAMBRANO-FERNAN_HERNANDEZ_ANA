@@ -3,11 +3,6 @@ package com.backend.integrador;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import com.backend.integrador.dao.OdontologoDAO;
-import com.backend.integrador.dao.impl.OdontologoDAOH2;
-import com.backend.integrador.entity.Odontologo;
-import com.backend.integrador.service.OdontologoService;
-
 public class Application {
     public static void main(String[] args) {
         Connection connection = null;

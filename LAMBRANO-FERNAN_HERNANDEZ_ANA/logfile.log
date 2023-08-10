@@ -1,0 +1,3 @@
+[2023-08-10 10:39:06] [ ERROR] [OdontologoDAOH2:83] Columna "matricula" no encontrada
+Column "matricula" not found [42122-220]
+[2023-08-10 10:41:32] [ INFO ] [OdontologoDAOH2:80] Listado de todos los odontologos: [Id: 1 - Numero DEMatricula: 884579 - Nombre: Paloma- Apellido:Benitez, Id: 2 - Numero DEMatricula: 666667 - Nombre: Fernan- Apellido:Lopez]

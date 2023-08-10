@@ -95,11 +95,11 @@ public class OdontologoDAOH2  implements OdontologoDAO<Odontologo> {
     private Odontologo crearObjetoOdontologo(ResultSet rs) throws SQLException {
 
         int id = rs.getInt("id");
-        String matricula = rs.getString("matricula");
+        String numero_matricula = rs.getString("numero_matricula");
         String nombre = rs.getString("nombre");
         String apellido = rs.getString("apellido");
 
-        return new Odontologo(id, matricula, nombre, apellido);
+        return new Odontologo(id, numero_matricula, nombre, apellido);
     }
 }
 
