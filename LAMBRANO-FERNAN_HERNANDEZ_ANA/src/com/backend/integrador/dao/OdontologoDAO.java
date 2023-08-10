@@ -1,9 +1,7 @@
 package com.backend.integrador.dao;
-
 import java.util.List;
+public interface OdontologoDAO<T>{
+    T guardar(T var1);
 
-public interface OdontologoDAO<T> {
-    void guardarOdontologo(T odontologo);
-
-    List<T> listarOdontologos();
+    List<T> listarTodos();
 }
